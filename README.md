@@ -1,6 +1,6 @@
 # Super Mario Clone
 
-A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that recreates the core gameplay of the original *Super Mario Bros.* (NES). Control Mario through a faithful recreation of World 1-1 — run, jump, stomp enemies, collect coins, break bricks, and find power-ups.
+A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that recreates the core gameplay of the original _Super Mario Bros._ (NES). Control Mario through a faithful recreation of World 1-1 — run, jump, stomp enemies, collect coins, break bricks, and find power-ups.
 
 ## Features
 
@@ -13,23 +13,22 @@ A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that rec
 - **Game Over** — Death animation with game-over screen (click to restart)
 - **Camera** — Horizontally follows Mario, clamped to map boundaries
 
-## Controls
-
-| Key | Action |
-|-----|--------|
-| ← / → | Move Mario left / right |
-| ↑ | Jump |
-| Space | Fire a fireball |
-
-On the Game Over screen, click anywhere to restart.
-
-## Screenshots
-
-<!-- TODO: Add in-game screenshots -->
-
 ## Gameplay Video
 
-<video src="assets/gameplay.mp4" controls title="Gameplay"></video>
+<video width="640" height="360" controls>
+  <source src="assets/Gameplay.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## Controls
+
+| Key   | Action                  |
+| ----- | ----------------------- |
+| ← / → | Move Mario left / right |
+| ↑     | Jump                    |
+| Space | Fire a fireball         |
+
+On the Game Over screen, click anywhere to restart.
 
 ## Quick Start
 
@@ -89,17 +88,17 @@ core/src/main/java/com/arjkre/SuperMarioClone/
 
 This project uses the Gradle wrapper. Useful commands:
 
-| Command | Task |
-|---------|------|
-| `./gradlew lwjgl3:run` | Start the game |
-| `./gradlew lwjgl3:jar` | Build a runnable JAR |
-| `./gradlew build` | Build all modules |
-| `./gradlew clean` | Remove build folders |
-| `./gradlew --continue` | Don't stop on errors |
-| `./gradlew --daemon` | Use Gradle daemon |
-| `./gradlew --offline` | Use cached dependencies |
-| `./gradlew idea` | Generate IntelliJ project files |
-| `./gradlew eclipse` | Generate Eclipse project files |
+| Command                | Task                            |
+| ---------------------- | ------------------------------- |
+| `./gradlew lwjgl3:run` | Start the game                  |
+| `./gradlew lwjgl3:jar` | Build a runnable JAR            |
+| `./gradlew build`      | Build all modules               |
+| `./gradlew clean`      | Remove build folders            |
+| `./gradlew --continue` | Don't stop on errors            |
+| `./gradlew --daemon`   | Use Gradle daemon               |
+| `./gradlew --offline`  | Use cached dependencies         |
+| `./gradlew idea`       | Generate IntelliJ project files |
+| `./gradlew eclipse`    | Generate Eclipse project files  |
 
 ## Platforms
 
