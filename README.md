@@ -1,4 +1,4 @@
-# Super Mario Clone
+# SuperMario-Clone
 
 A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that recreates the core gameplay of the original _Super Mario Bros._ (NES). Control Mario through a faithful recreation of World 1-1.
 
@@ -15,10 +15,7 @@ A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that rec
 
 ## Gameplay Video
 
-<video width="640" height="360" controls>
-  <source src="https://raw.githubusercontent.com/ArjKre/SuperMario-Clone/main/assets/Gameplay.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img width="600" height="342" alt="Image" src="assets/Gameplay.gif" />
 
 ## Controls
 
@@ -100,19 +97,35 @@ This project uses the Gradle wrapper. Useful commands:
 | `./gradlew idea`       | Generate IntelliJ project files |
 | `./gradlew eclipse`    | Generate Eclipse project files  |
 
+=======
+A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+
+This project was generated with a template including simple application launchers and a main class extending `Game` that sets the first screen.
+
 ## Platforms
 
-- `core/` — Main module with shared application logic
-- `lwjgl3/` — Desktop platform via LWJGL3
+- `core`: Main module with the application logic shared by all platforms.
+- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
-## Assets
+## Gradle
 
-- **Sprites:** `assets/Mario_and_Enemies.png` (texture atlas)
-- **Tileset:** `assets/tileset_gutter.png`
-- **Level:** `assets/level1.tmx` (World 1-1, 240×13 tiles)
-- **Music:** `assets/audio/music/mario_music.ogg`
-- **Sound effects:** 8 audio files in `assets/audio/sounds/`
+This project uses [Gradle](https://gradle.org/) to manage dependencies.
+The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
+Useful Gradle tasks and flags:
 
-## Credits
+- `--continue`: when using this flag, errors will not stop the tasks from running.
+- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
+- `--offline`: when using this flag, cached dependency archives will be used.
+- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
+- `build`: builds sources and archives of every project.
+- `cleanEclipse`: removes Eclipse project data.
+- `cleanIdea`: removes IntelliJ project data.
+- `clean`: removes `build` folders, which store compiled classes and built archives.
+- `eclipse`: generates Eclipse project data.
+- `idea`: generates IntelliJ project data.
+- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
+- `lwjgl3:run`: starts the application.
+- `test`: runs unit tests (if any).
 
-This project was generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
+For example, `core:clean` removes `build` folder only from the `core` project.
