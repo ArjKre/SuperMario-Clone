@@ -1,6 +1,6 @@
 # Super Mario Clone
 
-A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that recreates the core gameplay of the original _Super Mario Bros._ (NES). Control Mario through a faithful recreation of World 1-1 — run, jump, stomp enemies, collect coins, break bricks, and find power-ups.
+A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that recreates the core gameplay of the original _Super Mario Bros._ (NES). Control Mario through a faithful recreation of World 1-1.
 
 ## Features
 
@@ -16,7 +16,7 @@ A 2D side-scrolling platformer built with [libGDX](https://libgdx.com/) that rec
 ## Gameplay Video
 
 <video width="640" height="360" controls>
-  <source src="assets/Gameplay.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/ArjKre/SuperMario-Clone/main/assets/Gameplay.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
